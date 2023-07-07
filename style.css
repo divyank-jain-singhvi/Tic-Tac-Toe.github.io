@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(245, 245, 153);
+    
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 60vw;
+    height: 32vw;
+    margin: auto;
+    max-width: 80%;
+    margin-top: 3%;
+    font-size: 8vw;
+    display: flex;
+    justify-content: space-between;
+}
+.allbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vh;
+}
+div.box{
+    width: 10vw;
+    height: 10vw;
+    border: .2vw solid black;
+    text-align: center;
+    transition: all .25s;
+    background: linear-gradient(to bottom right, #deff3a, #a42bef, #0df5a8);
+    background-color: rgb(86, 108, 255);
+}
+
+div.box:hover{
+    background: rgb(228, 226, 226) ;
+}
+.row1,.row2,.row3{
+    display:flex;
+}
+.row1 div{
+    border-top: none;
+}
+.row3 div{
+    border-bottom: none;
+}
+.row1 .a,.row2 .a,.row3 .a{
+    border-left: none;
+}
+.row1 .c,.row2 .c,.row3 .c{
+    border-right: none;
+}
+.row1 .a{
+    border-top-left-radius: 4vw;
+}
+.row3 .a{
+    border-bottom-left-radius: 4vw;
+}
+.row1 .c{
+    border-top-right-radius: 4vw;
+}
+.row3 .c{
+    border-bottom-right-radius: 4vw;
+}
+.play{
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vw;
+    margin-left: 5vh;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw;
+}
+.button button{
+    height: 2vw;
+    width: 8vw;
+    font-size: 1.2vw;
+    background: linear-gradient(to bottom right,  #0df5a8 , #a42bef, #deff3a);
+    color: white;
+    box-shadow: 8px 7px 9px black;
+} 
+.gif{
+    background-image: url('ezgif.com-video-to-gif.gif');
+    width: 16vw;
+    height: 10vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4vw;
+    margin-top: 1vw;
+}
+@media (max-width: 767px) {
+    .container{
+        width: 100vw;
+        height: 72vw;
+        display: flex;
+        flex-direction: column;
+        font-size: 18vw;
+        
+    }
+  .complete {
+    margin: auto;
+    max-height: 100%;
+  }
+  .play{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vh;
+    font-size: 5vw;
+  }
+  div.box{
+    width: 25vw;
+    height: 25vw;
+    text-align: center;
+}
+.button button{
+    height: 7vw;
+    width: 28vw;
+    font-size: 4vw;
+    margin-top: 8vw;
+    font-weight: bold;
+} 
+.gif{
+    width: 47vw;
+    height: 26vw;
+}
+  }
